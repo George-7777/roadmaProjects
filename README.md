@@ -24,6 +24,6 @@ https://roadmap.sh/projects/pricing-comparison-table project link
 
 Blog Post Page:
 
-* folder
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/4-blog-post-page folder
 
 https://roadmap.sh/projects/blog-post-page project link
