@@ -18,3 +18,6 @@ https://roadmap.sh/projects/basic-html-website project link
 
 Pricing Comparison Table
 
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/3-pricing-comparison-table folder
+
+https://roadmap.sh/projects/pricing-comparison-table project link
