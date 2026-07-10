@@ -33,3 +33,9 @@ Contact Form:
 https://github.com/George-7777/roadmaProjects/tree/main/frontend/5-contact-form folder
 
 https://roadmap.sh/projects/contact-form project link
+
+Photo showcase:
+
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/6-photo-showcase folder
+
+https://roadmap.sh/projects/photo-showcase project link
