@@ -39,3 +39,11 @@ Photo showcase:
 https://github.com/George-7777/roadmaProjects/tree/main/frontend/6-photo-showcase folder
 
 https://roadmap.sh/projects/photo-showcase project link
+
+
+
+### CSS
+
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/2-basic-html-website folder
+
+https://roadmap.sh/projects/portfolio-website project link
