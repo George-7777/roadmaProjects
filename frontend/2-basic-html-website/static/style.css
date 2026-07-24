@@ -141,3 +141,38 @@ h1, h2, h3 {
 p.author {
   color: #858484;
 }
+.styled-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #379DA4;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.styled-form > div {
+  margin-bottom: 20px;
+}
+.styled-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="submit"],
+.styled-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333333;
+  background-color: #fcfcfc;
+}
+.styled-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}

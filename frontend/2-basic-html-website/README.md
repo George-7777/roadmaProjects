@@ -1,3 +1,5 @@
 # README
 
-Roadmap project: https://roadmap.sh/projects/basic-html-website
+Roadmap project: 
+HTML - https://roadmap.sh/projects/basic-html-website
+CSS - https://roadmap.sh/projects/portfolio-website
