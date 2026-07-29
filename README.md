@@ -48,6 +48,6 @@ https://github.com/George-7777/roadmaProjects/tree/main/frontend/2-basic-html-we
 
 https://roadmap.sh/projects/portfolio-website project link
 
-https://github.com/George-7777/roadmaProjects/tree/main/frontend/frontend/7-changelog-component folder
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/7-changelog-component folder
 
 https://roadmap.sh/projects/changelog-component project link
