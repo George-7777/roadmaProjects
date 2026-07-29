@@ -1,0 +1,77 @@
+body, #intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2, #changelog ul li div, #visit button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: grey;
+}
+#changelog {
+    margin-top: 70px;
+}
+#changelog ul {
+    list-style: none;
+}
+#changelog ul li {
+    grid-template-columns: 1fr 0.35fr 2fr;
+    display: grid;
+    margin-top: 30px;
+}
+#changelog ul li div {
+    font-size: 25px;
+}
+#changelog ul li .date {
+    color: gray;
+    text-align: right;
+    grid-column: 1;
+    grid-row: 1;
+}
+#changelog ul li .description {
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+#changelog ul li::before {
+    content: '';
+    grid-column: 2;
+    grid-row: 1;
+    width: 2px;
+    height: 300%;
+    background-color: #000;
+    justify-self: center;
+    position: relative;
+    transform: translateY(-20px); 
+}
+#changelog ul li::after {
+    content: '';
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 2;
+    pointer-events: none;
+}
+#visit {
+    margin-top: 70px;
+}
+#visit button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: #000;
+    color: white;
+}
