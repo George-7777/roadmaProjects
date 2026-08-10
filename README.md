@@ -52,6 +52,6 @@ https://github.com/George-7777/roadmaProjects/tree/main/frontend/7-changelog-com
 
 https://roadmap.sh/projects/changelog-component project link
 
-https://github.com/George-7777/roadmaProjects/tree/main/frontend/frontend/8-testimonial-cards folder
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/8-testimonial-cards folder
 
 https://roadmap.sh/projects/testimonial-cards project link
