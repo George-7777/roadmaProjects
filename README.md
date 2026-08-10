@@ -56,6 +56,6 @@ https://github.com/George-7777/roadmaProjects/tree/main/frontend/8-testimonial-c
 
 https://roadmap.sh/projects/testimonial-cards project link
 
-https://github.com/George-7777/roadmaProjects/tree/main/frontend/frontend/9-datepicker-ui folder
+https://github.com/George-7777/roadmaProjects/tree/main/frontend/9-datepicker-ui folder
 
 https://roadmap.sh/projects/datepicker-ui project link
