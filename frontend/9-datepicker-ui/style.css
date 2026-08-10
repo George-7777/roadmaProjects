@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+.datepicker {
+    width: 134px;
+}
+.datepicker div.input {
+    display: grid;
+    grid-template-columns: 86% 14%;
+    margin-bottom: 10px;
+}
+.datepicker caption div {
+    display: grid;
+    grid-template-columns: 14% 72% 14%;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.datepicker caption div button {
+    text-align: center;
+    padding: 0;
+}
+.datepicker span.input {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+.datepicker div.input button {
+    padding: 0;
+    border: 1px solid black;
+    border-left: none;
+}
+.datepicker div.input {
+    width: 100%;
+}
+.material-symbols-outlined {
+    font-size: 12px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+.datepicker table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-top: none;
+}
+.datepicker td {
+    border: 1px solid black;
+    text-align: center;
+    padding: auto;
+}
