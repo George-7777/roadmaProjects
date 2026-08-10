@@ -1,0 +1,131 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+p, h1, h2 {
+    font-family: Arial, sans-serif;
+}
+img {
+    border-radius: 35px;
+}
+#bubble #dialog, #simple, #big img, #big div, #multi {
+    border: 3px solid black;
+    border-radius: 20px;
+}
+#big img {
+    border-width: 0;
+    height: 100%;
+}
+#bubble, #simple {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 60% 40%;
+}
+#simple > p {
+    font-size: 20px;
+}
+#bubble #dialog, #simple {
+    padding: 10px;
+    padding-top: 0px;
+}
+#bubble {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+}
+#bubble #dialog {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+#bubble #dialog::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid black;
+}
+div.author {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.author .nick {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.author .nick p {
+    text-align: left;
+}
+.author img {
+    margin: auto;
+}
+.nick .name { 
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.nick .spec {
+    margin-top: 3px;
+}
+#simple {
+    grid-column: 2;
+    grid-row: 1;
+}
+#big {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 34% 66%;
+    grid-auto-rows: 200px;
+}
+#big div {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    padding-top: 7px;
+}
+#big div h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+#big div h2 {
+    font-size: 15px;
+    color: grey;
+}
+#multi {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#multi .select {
+    display: flex;
+}
+#multi p {
+    text-align: center;
+}
+#multi .select p {
+    font-size: 30px;
+    padding: auto;
+    margin: 20px;
+}
+#multi .select img.inactive {
+    height: 55px;
+    opacity: 0.5;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
