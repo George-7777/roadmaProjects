@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Accessible form ui</title>
+</head>
+<body>
+    <main>
+        <section id="form">
+            <form>
+    <label for="fullname">Full Name</label>
+    <input id="fullname" name="fullname" type="text" autofocus required maxlength="1997" placeholder="What should we call you?" aria-required="true" aria-describedby="fullname-error">
+    <label for="fullname" class="error inactive" id="fullname-error" aria-live="polite">ERROR</label>
+
+    <label for="email">Email</label>
+    <input class="error" id="email" name="email" type="email" required maxlength="300" value="john@doe.com" placeholder="john@example.com" aria-required="true" aria-invalid="true" aria-describedby="email-error">
+    <label for="email" class="error active" id="email-error" aria-live="assertive">Email is already taken.</label>
+
+    <label for="password">Enter Password</label>
+    <div class="password-container">
+        <input id="password" name="password" type="password" required maxlength="300" placeholder="xxxxxxxx" aria-required="true" aria-describedby="password-error">
+        <button type="button" class="toggle-password" aria-label="Show password" aria-pressed="false">
+            <span class="material-icons" aria-hidden="true">visibility</span>
+        </button>
+    </div>
+    <p class="error inactive" id="password-error" aria-live="polite">ERROR</p>
+
+    <label for="confirm_password">Confirm Password</label>
+    <div class="password-container">
+        <input id="confirm_password" name="confirm_password" type="password" required maxlength="300" placeholder="xxxxxxxx" aria-required="true" aria-describedby="confirm-password-error">
+        <button type="button" class="toggle-password" aria-label="Show password" aria-pressed="false">
+            <span class="material-icons" aria-hidden="true">visibility</span>
+        </button>
+    </div>
+    <p class="error inactive" id="confirm-password-error" aria-live="polite">ERROR</p>
+
+    <input type="submit" id="submit" value="Update Profile">
+</form>
+        </section>
+        <section id="progress">
+            <div class="circle-progress" id="circularProgress">
+                <svg width="150" height="150">
+                    <circle class="bg" cx="75" cy="75" r="65"></circle>
+                    <circle class="progress" cx="75" cy="75" r="65" 
+                            stroke-dasharray="408.4" 
+                            stroke-dashoffset="408.4"></circle>
+                </svg>
+                <div class="percentage">
+                    65<small>%</small>
+                </div>
+            </div>
+
+            <h2>Profile Completeness</h2>
+            
+            <div id="checklist">
+                <ul>
+                    <li class="done">  Create Account  </li>
+                    <li class="done">  Update Roadmap Progress  </li>
+                    <li class="done">  Setup Public Profile  </li>
+                    <li>  Complete your first project  </li>
+                    <li>  Invite your Friends  </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function setProgress(percent) {
+            const circle = document.querySelector('.circle-progress .progress');
+            const percentageText = document.querySelector('.circle-progress .percentage');
+            
+            const circumference = 408.4;
+            const offset = circumference - (percent / 100) * circumference;
+            
+            circle.style.strokeDashoffset = offset;
+            percentageText.innerHTML = `${Math.round(percent)}<small>%</small>`;
+        }
+
+        setProgress(65);
+    </script>
+</body>
+</html>

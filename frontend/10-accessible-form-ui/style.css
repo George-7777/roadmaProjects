@@ -1,0 +1,140 @@
+main {
+    margin: 50px;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    width: 50%;
+}
+p, label, h2, li {
+    font-family: Arial, sans-serif;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+input {
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 80%;
+    height: 20px;
+    padding: 3px;
+}
+.inactive {
+    display: none;
+}
+#submit {
+    margin-top: 20px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    padding: auto;
+    font-weight: normal;
+    font-size: 20px;
+}
+.error:not(input) {
+    margin-top: 5px;
+}
+.error {
+    font-size: 15px;
+    color: red;
+}
+input.error {
+    border-color: red;
+}
+h2 {
+    font-size: 20px;
+}
+#progress {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#checklist {
+    border-radius: 12px;
+    background-color: rgb(214, 214, 214);
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    padding: 15px;
+}
+li {
+    margin-bottom: 15px;
+}
+li.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.password-container {
+    position: relative;
+    width: 80%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1.5px;
+    padding: 0;
+    color: #666;
+}
+.toggle-password .material-icons {
+            font-size: 22px;
+}
+
+.circle-progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.circle-progress svg {
+    transform: rotate(-90deg);
+}
+
+.circle-progress .bg {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 8;
+}
+
+.circle-progress .progress {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.circle-progress .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+.circle-progress .percentage small {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
